@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProductDetailActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+    <ImageView
+        android:id="@+id/iv_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/yupi"/>
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="392dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥34.5起"
+            android:textColor="#FF6600"
+            android:textSize="30sp"></TextView>
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/price"
+            android:background="@drawable/background"
+            android:text="天猫"
+            android:textColor="#FFF"
+            android:textSize="25sp"></TextView>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="321dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/price"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/type"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="asd"
+            android:textColor="#000000"
+            android:textSize="30sp"></TextView>
+        <TextView
+            android:id="@+id/sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:text="月销：34已售"></TextView>
+
+        <ImageView
+            android:id="@+id/dianpu"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_below="@+id/type"
+            android:layout_marginTop="162dp"
+            android:src="@drawable/dianpu"></ImageView>
+
+        <ImageView
+            android:id="@+id/kefu"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_below="@+id/type"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="163dp"
+            android:layout_toRightOf="@+id/dianpu"
+            android:src="@drawable/weitao"></ImageView>
+
+        <ImageView
+            android:id="@+id/shoucang"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_below="@+id/type"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="163dp"
+            android:layout_toRightOf="@+id/kefu"
+            android:src="@drawable/shoucang"></ImageView>
+
+        <TextView
+            android:id="@+id/tv_dianpu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dianpu"
+            android:layout_marginTop="1dp"
+            android:text="店铺"
+            android:textSize="16sp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_kefu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kefu"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/tv_dianpu"
+            android:text="客服"
+            android:textSize="16sp"></TextView>
+        <TextView
+            android:id="@+id/tv_shoucang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kefu"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/tv_kefu"
+            android:text="收藏"
+            android:textSize="16sp"></TextView>
+
+        <TextView
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/dianpu"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="-32dp"
+            android:layout_toRightOf="@id/shoucang"
+            android:background="@drawable/addcar"
+            android:gravity="center"
+            android:text="  加入购物车 "
+            android:textColor="#FFF"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:id="@+id/buy"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/dianpu"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="-32dp"
+            android:layout_toRightOf="@id/add"
+            android:background="@drawable/purchase"
+            android:gravity="center"
+            android:text=" 立即购买   "
+            android:textColor="#FFF"
+            android:textSize="20sp"></TextView>
+    </RelativeLayout>
+
+</LinearLayout>

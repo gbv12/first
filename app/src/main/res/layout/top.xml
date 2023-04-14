@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="700dp"
+
+    android:layout_weight="1">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#C8052C"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border1">
+
+                    <Button
+                        android:layout_width="66dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/border1"
+                        android:stateListAnimator="@null"
+                        android:text="签到  "
+                        android:textAlignment="textEnd"
+                        android:textColor="#FF6633"
+                        android:textSize="15sp"
+                        android:textStyle="bold"></Button>
+
+                    <ImageView
+                        android:layout_width="34dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_round"
+                        android:src="@drawable/hongbao"></ImageView>
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center|right"
+                    android:text="订阅   "
+                    android:textColor="@color/white"
+                    android:textSize="25sp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center|left"
+                    android:text="   推荐"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"></TextView>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border1">
+
+                    <Button
+                        android:layout_width="66dp"
+                        android:layout_height="28dp"
+
+                        android:background="@drawable/border1"
+                        android:stateListAnimator="@null"
+                        android:text="会员 "
+                        android:textAlignment="textEnd"
+                        android:textColor="#FF6633"
+                        android:textSize="15sp"
+                        android:textStyle="bold"></Button>
+
+                    <ImageView
+                        android:layout_width="34dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_round"
+                        android:src="@drawable/hongbao"></ImageView>
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:dropDownWidth="80dp"
+                    android:entries="@array/sp_area"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="center"></Spinner>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="6"
+                    android:background="@drawable/search_layout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/iv_camera"
+                            android:layout_width="52dp"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="10dp"
+                            android:src="@drawable/scan"></ImageView>
+
+                        <EditText
+                            android:id="@+id/et_search"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="0dp"
+                            android:layout_toRightOf="@id/iv_camera"
+                            android:background="@drawable/edittext_shape01"
+                            android:hint="神舟笔记本电脑               " />
+
+                        <Button
+                            android:id="@+id/btn11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/et_search"
+                            android:background="@drawable/border1"
+                            android:text="搜索"></Button>
+                    </RelativeLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        //Spinner布局 第二部分
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll1"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:spanCount="2"></androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+        </LinearLayout>
+        //滚动文字、倒计时 第四部分
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll2"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            //计时器
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="   倒计时   "
+                        android:textAlignment="center"
+                        android:textColor="#FF3300"
+                        android:textStyle="bold|italic">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tv_deTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_time"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/border3_3"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"></TextView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/border4_1"
+                    android:gravity="center"
+                    android:text="淘宝头条"
+                    android:textAllCaps="false"
+                    android:textColor="#F8ECEF"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ViewFlipper
+                    android:id="@+id/vf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:flipInterval="5000"
+                    android:inAnimation="@anim/anim_come_in"
+                    android:outAnimation="@anim/anim_get_out">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp">
+
+                        <TextView
+                            android:id="@+id/tv_left"
+                            android:layout_width="47dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border5"
+                            android:gravity="center"
+                            android:text="热议"
+                            android:textColor="#F63A60"></TextView>
+
+                        <TextView
+                            android:id="@+id/tv_up"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_toRightOf="@+id/tv_left"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="记住秋冬最好不要穿这三种鞋和裙子顺丰到付两万人发达的"></TextView>
+
+                        <TextView
+                            android:id="@+id/tv_right"
+                            android:layout_width="47dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_left"
+                            android:layout_marginTop="7dp"
+                            android:background="@drawable/border5"
+                            android:gravity="center"
+                            android:text="热议"
+                            android:textColor="#F63A60"></TextView>
+
+                        <TextView
+                            android:id="@+id/tv_middle"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_below="@id/tv_up"
+                            android:layout_toRightOf="@id/tv_right"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="她11年没有减法只染发，解开时惊艳了众人，原来她就是龙王"></TextView>
+
+                    </RelativeLayout>
+                </ViewFlipper>
+
+            </LinearLayout>
+        </LinearLayout>
+        //TableLatout、第三部分
+
+        <TableLayout
+            android:id="@+id/tl4"
+            android:layout_width="match_parent"
+            android:layout_height="249dp"
+            android:layout_below="@+id/ll3"
+            android:stretchColumns="2">
+            //水平
+
+            <TableRow
+                android:background="@drawable/border_table"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="178dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="204dp"
+                        android:layout_height="117dp"
+                        android:layout_margin="2dp">
+
+                        <TextView
+                            android:id="@+id/tv_ju"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="聚划算"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/tv_ju"
+                            android:layout_marginLeft="1dp"
+                            android:layout_toRightOf="@id/tv_ju"
+                            android:background="@drawable/border3_1"
+                            android:text=" 百亿补贴 "
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/img3_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_ju"
+                            android:layout_marginTop="1dp"
+                            android:src="@drawable/img3_1" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_ju"
+                            android:layout_marginLeft="-3dp"
+                            android:layout_marginTop="-1dp"
+                            android:layout_toRightOf="@id/img3_1"
+                            android:src="@drawable/img3_2" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="241dp"
+                        android:layout_height="106dp"
+                        android:layout_margin="2dp">
+
+                        <TextView
+                            android:id="@+id/tv_jia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="有好价"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/tv_jia"
+                            android:layout_marginLeft="1dp"
+                            android:layout_toRightOf="@id/tv_jia"
+                            android:background="@drawable/border3_2"
+                            android:text=" 同款低价 "
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/img3_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="94dp"
+                            android:layout_below="@id/tv_jia"
+                            android:layout_marginTop="1dp"
+                            android:src="@drawable/img3_3" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_jia"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="-2dp"
+                            android:layout_toRightOf="@id/img3_3"
+                            android:src="@drawable/img3_4" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/border_table"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp">
+
+                        <TextView
+                            android:id="@+id/tv_huo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="有好货"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/tv_huo"
+                            android:layout_marginLeft="1dp"
+                            android:layout_toRightOf="@id/tv_huo"
+                            android:background="@drawable/border3_3"
+                            android:text=" 好口碑 "
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/img3_7"
+                            android:layout_width="96dp"
+                            android:layout_height="106dp"
+                            android:layout_below="@id/tv_huo"
+                            android:layout_marginTop="1dp"
+                            android:src="@drawable/img3_7" />
+
+                        <ImageView
+                            android:layout_width="136dp"
+                            android:layout_height="98dp"
+                            android:layout_below="@id/tv_huo"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_toRightOf="@id/img3_7"
+                            android:src="@drawable/img3_8" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp">
+
+                        <TextView
+                            android:id="@+id/tv_tao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="淘宝直播"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"></TextView>
+
+
+                        <ImageView
+                            android:id="@+id/zhibo"
+                            android:layout_width="34dp"
+                            android:layout_height="26dp"
+                            android:layout_toRightOf="@id/tv_tao"
+                            android:src="@drawable/zhibo"></ImageView>
+
+                        <ImageView
+                            android:id="@+id/img3_5"
+                            android:layout_width="101dp"
+                            android:layout_height="102dp"
+                            android:layout_below="@id/tv_tao"
+                            android:layout_marginTop="1dp"
+                            android:src="@drawable/img3_5" />
+
+                        <ImageView
+                            android:layout_width="77dp"
+                            android:layout_height="103dp"
+                            android:layout_below="@id/tv_tao"
+                            android:layout_marginLeft="-1dp"
+                            android:layout_toRightOf="@id/img3_5"
+                            android:src="@drawable/img3_6" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </TableRow>
+        </TableLayout>
+        //图片轮播
+
+        <LinearLayout
+            android:id="@+id/ll5"
+            android:layout_width="match_parent"
+            android:layout_height="179dp"
+            android:layout_below="@id/tl4"
+            android:background="#CC2D05"
+            android:gravity="center">
+
+            <ViewFlipper
+                android:id="@+id/vf2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:inAnimation="@anim/left_in"
+                android:outAnimation="@anim/right_out">
+
+                <ImageView
+                    android:id="@+id/iv_mouse"
+                    android:layout_width="322dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/mouse" />
+
+                <ImageView
+                    android:id="@+id/iv_mi"
+                    android:layout_width="384dp"
+                    android:layout_height="146dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/mi" />
+
+                <ImageView
+                    android:id="@+id/iv_ipad"
+                    android:layout_width="384dp"
+                    android:layout_height="146dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ipad" />
+
+                <ImageView
+                    android:id="@+id/iv_sport"
+                    android:layout_width="384dp"
+                    android:layout_height="146dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/sport" />
+            </ViewFlipper>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

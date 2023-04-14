@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddressActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF8300">
+
+        <ImageView
+            android:id="@+id/fanhui"
+            android:layout_width="46dp"
+            android:layout_height="44dp"
+            android:src="@drawable/fhui"></ImageView>
+
+        <TextView
+            android:id="@+id/tv_tongxunlu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="84dp"
+            android:layout_toRightOf="@+id/fanhui"
+            android:text="手机通讯录"
+            android:textAlignment="center"
+            android:textSize="30sp"></TextView>
+
+        <EditText
+            android:id="@+id/et_search1"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tv_tongxunlu"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/search_layout"
+            android:hint="  查找手机联系人"
+            android:textSize="20sp"></EditText>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@+id/et_search1"
+            ></TextView>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_tongxunlu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

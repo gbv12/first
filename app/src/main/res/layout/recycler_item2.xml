@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+
+        android:src="@drawable/xiangbao"></ImageView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="190dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background"
+            android:text="天猫"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="2"
+
+            android:paddingStart="40dp"
+            android:text="洽洽每日坚果恰恰混合坚果30包干果果仁小包装好吃的"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="79.0"
+            android:textColor="#FF6600"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="103dp"
+            android:layout_toRightOf="@id/tv_price"
+            android:paddingLeft="10dp"
+            android:text="399人付款"
+            android:textColor="#EDBEBE"
+            android:textSize="15sp"></TextView>
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="125dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="137dp"
+            android:src="@drawable/figure1" />
+
+        <TextView
+            android:id="@+id/diamming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv2"
+            android:text="Apple旗舰店"></TextView>
+
+        <ImageButton
+            android:id="@+id/ib_shopcar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@id/iv2"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/iv2"
+            android:src="@drawable/shopcar"></ImageButton>
+
+
+    </RelativeLayout>
+</LinearLayout>

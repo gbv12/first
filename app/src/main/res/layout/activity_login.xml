@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/fanhui"
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/fhui"
+            ></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="帮助"
+            android:layout_marginLeft="300dp"
+            android:textSize="30sp"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"></LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+
+
+    <ImageView
+        android:layout_width="121dp"
+        android:layout_height="124dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/icon_taobao"></ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#F28500"
+            android:text="账号:"
+            android:textAlignment="textEnd"
+            android:textSize="20sp"
+            ></TextView>
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            ></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="104dp"
+            android:layout_height="match_parent"
+
+            android:text="密码:"
+            android:textAlignment="textEnd"
+            android:textColor="#F28500"
+            android:textSize="20sp"></TextView>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"></EditText>
+
+            <TextView
+                android:id="@+id/code"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:textSize="15sp"
+                android:text="忘记密码"
+                android:textAlignment="center"></TextView>
+        </FrameLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="280dp"
+            android:layout_height="64dp"
+            android:textSize="25sp"
+            android:background="#F28500"
+            android:text="登     录"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/valicate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码登录"
+            android:textSize="15sp"
+            android:layout_marginLeft="60dp"
+           ></TextView>
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:layout_marginLeft="180dp"
+            android:text="注册"
+            android:textSize="15sp"
+            ></TextView>
+    </LinearLayout>
+
+
+</LinearLayout>
+</LinearLayout>

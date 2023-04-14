@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="700dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消息"
+            android:textSize="40sp"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/clear_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/message"
+            android:layout_marginLeft="-3dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toRightOf="@+id/message"
+            android:paddingLeft="10dp"
+            android:text="清除未读"
+            android:hint="添加好友"
+            android:textSize="25sp"></TextView>
+
+        <ImageView
+            android:id="@+id/iv_tongxunlu"
+            android:layout_width="40dp"
+            android:layout_height="39dp"
+            android:layout_alignBottom="@id/clear_message"
+            android:layout_marginLeft="162dp"
+            android:layout_toRightOf="@+id/clear_message"
+            android:src="@drawable/tongxunlu"></ImageView>
+    </RelativeLayout>
+
+</LinearLayout>

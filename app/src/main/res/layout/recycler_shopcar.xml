@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <CheckBox
+        android:id="@+id/cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        ></CheckBox>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="231dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_tianmao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/tianmao"></ImageView>
+
+
+        <TextView
+            android:id="@+id/tv_dianming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_tianmao"
+            android:text="乐高玩具专卖店"
+            android:textSize="25sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/huodong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_tianmao"
+            android:layout_alignLeft="@id/iv_tianmao"
+            android:layout_marginLeft="-3dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/border5"
+            android:text=""
+            android:textColor="#FF33"></TextView>
+
+        <TextView
+            android:id="@+id/xiangxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dianming"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/huodong"
+            android:text=""
+            android:textSize="10sp"></TextView>
+
+        <ImageView
+            android:id="@+id/shangpin"
+            android:layout_width="178dp"
+            android:layout_height="152dp"
+            android:layout_below="@id/huodong"
+            android:layout_alignLeft="@id/huodong"
+            android:src="@drawable/legao"></ImageView>
+
+        <TextView
+            android:id="@+id/mingzi"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xiangxi"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/shangpin"
+            android:text="乐高积木"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/jiage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mingzi"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="59dp"
+            android:layout_toRightOf="@id/shangpin"
+            android:text="￥123.5"
+            android:textColor="#FF9800"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/ib_jianhao"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_below="@+id/jiage"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/shangpin"
+            android:src="@drawable/jianhao"></ImageButton>
+
+        <TextView
+            android:id="@+id/tv_shuliang"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@id/ib_jianhao"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/ib_jianhao"
+            android:text="1"
+            android:textAlignment="textEnd"
+            android:textSize="20sp"></TextView>
+
+        <ImageButton
+            android:id="@+id/ib_jiahao"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/tv_shuliang"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="-5dp"
+            android:layout_toRightOf="@+id/tv_shuliang"
+            android:src="@drawable/jiahao"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="45dp"
+            android:layout_height="43dp"
+            android:layout_alignBottom="@id/ib_jiahao"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toRightOf="@+id/ib_jiahao"
+            android:src="@drawable/lajitong"></ImageButton>
+    </RelativeLayout>
+
+</LinearLayout>

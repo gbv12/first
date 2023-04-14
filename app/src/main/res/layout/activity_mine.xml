@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="700dp"
+    android:id="@+id/mine"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C9ED0951">
+
+        <ImageButton
+            android:id="@+id/ib_touxiang"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/user"></ImageButton>
+
+        <TextView
+            android:id="@+id/tv_nicheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/ib_touxiang"
+            android:paddingLeft="20dp"
+            android:text="游客"
+            android:textColor="@color/white"
+            android:textSize="25sp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_ming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="-3dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/ib_touxiang"
+            android:paddingLeft="20dp"
+            android:text="账号："
+            android:textColor="@color/white"
+            android:textSize="25sp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_zhanghao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tv_ming"
+            android:paddingLeft="20dp"
+            android:textColor="@color/white"
+            android:textSize="25sp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_gaunzhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_ming"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="19dp"
+            android:layout_toRightOf="@id/ib_touxiang"
+            android:paddingLeft="20dp"
+            android:text="关注 0 | 粉丝 0 | 好友 0"
+            android:textColor="@color/white"
+            android:textSize="15sp"></TextView>
+
+        <ImageView
+            android:id="@+id/iv_setting"
+            android:layout_width="39dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="249dp"
+            android:layout_marginRight="17dp"
+            android:layout_toRightOf="@id/ib_touxiang"
+            android:src="@drawable/setting" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_below="@id/iv_setting"
+            android:layout_marginLeft="249dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@id/ib_touxiang"
+            android:text="设置"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="585dp"
+            android:layout_below="@+id/ib_touxiang"
+            android:src="@drawable/wodexiamian"></ImageView>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/border_mine">
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
