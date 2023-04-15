@@ -1,0 +1,38 @@
+[
+    {
+        "type": "天猫",
+        "name": "豆奶",
+        "shop": "华为旗舰店",
+        "icon": "http://192.168.0.105:8080/product/img/shuiguogan.png",
+        "icon2": "http://192.168.0.105:8080/product/img/figure1.png",
+        "price": 34.5,
+        "amount": "2342人付款"
+    },
+    {
+        "type": "天猫",
+        "name": "恰恰每日坚果恰恰混合坚果",
+        "shop": "Apple Store 官方旗舰店",
+        "icon": "http://192.168.0.105:8080/product/img/jianguo.png",
+        "icon2": "http://192.168.0.105:8080/product/img/figure2.png",
+        "price": 24.5,
+        "amount": "232人付款"
+    },
+    {
+        "type": "天猫",
+        "name": "恰恰南瓜子",
+        "shop": "SAMSUNG旗舰店",
+        "icon": "http://192.168.0.105:8080/product/img/guazi.png",
+        "icon2": "http://192.168.0.105:8080/product/img/figure3.png",
+        "price": 4.9,
+        "amount": "2432人付款"
+    },
+    {
+        "type": "天猫",
+        "name": "irvins高蛋白零食",
+        "shop": "联想旗舰店",
+        "icon": "http://192.168.0.105:8080/product/img/yupi.png",
+        "icon2": "http://192.168.0.105:8080/product/img/figure4.png",
+        "price": 89.2,
+        "amount": "22人付款"
+    }
+]
